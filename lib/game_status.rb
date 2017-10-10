@@ -50,17 +50,7 @@ def draw?(board)
   end
 end
 
-def over?(board)
-  if full?(board) == true
-    return true
-  elsif !won?(board) == false
-    return true
-  elsif draw?(board) == true
-    return true
-  else
-    return false
-  end
-end
+
 
 def winner(board)
    if win_combination = won?(board)
